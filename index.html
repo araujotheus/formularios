@@ -1,11 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário</title>
+  <link href='/style.css' rel='stylesheet'>
 </head>
+
 <body>
-    
+  <div id="page">
+    <header>
+      <h1>Formulário de Inscrição</h1>
+    </header>
+
+    <main>
+      <form>
+        <fieldset class="informacoes-pessoais">
+          <legend>Informações Pessoais</legend>
+
+          <div>
+            <label for="nome">Nome completo:</label>
+            <input type="text" placeholder="Digite aqui seu nome" id="nome" required>
+          </div>
+
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" placeholder="Digite seu e-mail" id="email" required>
+          </div>
+
+          <div>
+            <label for="numero">Número de telefone do responsável:</label>
+            <input type="tel" placeholder="Digite aqui o número" id="numero" required>
+          </div>
+
+          <div>
+            <label for="data-nascimento">Data de nascimento</label>
+            <input type="date" id="data-nascimento" maxlength="2014-12-31" required>
+          </div>
+          
+          <div>
+            <input type="checkbox" id="batismo">
+            <label for="batismo">Batismo</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="comunhao">
+            <label for="comunhao">Primeira Comunhão</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="sertanejo">
+            <label for="sertanejo">sertanejo</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="pagode">
+            <label for="pagode">Pagode</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="rock">
+            <label for="rock">Rock</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="outros">
+            <label for="outris">Outros</label>
+          </div>
+
+        <button>Enviar</button>
+      </form>
+    </main>
+  </div>
 </body>
 </html>
